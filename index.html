@@ -106,9 +106,12 @@
         } else if (bmi >= 18.5 && bmi < 25) {
           category = "Normal (Ideal)";
           color = "#81C784"; // Light Green
-        } else if (bmi >= 25 && bmi < 30) {
-          category = "Kelebihan berat badan";
+        } else if (bmi >= 25.1 && bmi <= 27) {
+          category = "Kelebihan berat badan Ringan";
           color = "#FFC107"; // Light Orange
+        } else if (bmi > 27 ) {
+          category = "Kelebihan berat badan Berat";
+          color = "#FFC107"; // Light Orange  
         } else {
           category = "Obesitas";
           color = "#FF69B4"; // Light Red
