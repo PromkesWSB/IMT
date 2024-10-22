@@ -100,18 +100,21 @@
         let category = "";
         let color = "";
 
-        if (bmi < 18.5) {
-          category = "Kekurangan berat badan";
+        if (bmi < 17) {
+          category = "Kekurangan berat badan (Sangat Kurus)";
           color = "#64B5F6"; // Light Blue
+        } else if (bmi >= 17 && bmi < 18.5 ) {
+          category = "Kekurangan berat badan (Kurus)";
+          color = "#64B5F6"; // Light Blue 
         } else if (bmi >= 18.5 && bmi < 25) {
           category = "Normal (Ideal)";
           color = "#81C784"; // Light Green
         } else if (bmi >= 25.1 && bmi <= 27) {
-          category = "Kelebihan berat badan Ringan";
+          category = "Kelebihan berat badan Ringan (Gemuk)";
           color = "#FFC107"; // Light Orange
         } else if (bmi > 27 ) {
-          category = "Kelebihan berat badan Berat";
-          color = "#FFC107"; // Light Orange  
+          category = "Kelebihan berat badan Berat (OBESITAS)";
+          color = "#FF69B4"; // Light Red  
         } else {
           category = "Obesitas";
           color = "#FF69B4"; // Light Red
